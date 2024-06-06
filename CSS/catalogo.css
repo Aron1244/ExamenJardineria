@@ -1,0 +1,44 @@
+.row {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  margin: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-top: 10px;
+  min-height: 3em;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body .btn {
+  margin-top: 10px;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogoContainer {
+  width: 90vw;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}

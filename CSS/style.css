@@ -1,0 +1,122 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contenido {
+  min-height: 80vh;
+  width: 100%;
+  background-color: wheat;
+  transition: background-color 0.5s;
+}
+
+.light-mode {
+  background-color: #fefae0;
+  color: #606c38;
+}
+
+.dark-mode {
+  background-color: #dda15e;
+  color: white;
+  font-weight: bold;
+}
+
+.light-mode-footer {
+  background-color: #606c38;
+  color: white;
+  font-weight: bold;
+}
+
+.dark-mode-footer {
+  background-color: #283618;
+  color: #dda15e;
+  font-weight: bold;
+}
+
+/* Para editar los estilos del navbar de Bootstrap */
+
+.navbar-custom {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #ffffff !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.navbar-custom .navbar-nav {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-custom .nav-item {
+  display: inline-block !important;
+  padding: 0 10px !important;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #cccccc !important;
+}
+
+.navbar img {
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.2);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  min-height: 20vh;
+  color: white;
+  text-align: center;
+  background-color: rgb(124, 67, 29);
+  overflow: hidden;
+}
+
+.iconoFooter {
+  width: 40px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.iconoFooter:hover {
+  transform: scale(1.2);
+}
+
+.mapa {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}

@@ -1,0 +1,13 @@
+.container{
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.img-thumbnail{
+    height: 80vh;
+    width: 30vw;
+}
+
+.btnRegreso:hover{
+    transform: scale(1.1);
+}
