@@ -13,20 +13,19 @@ function loadCart() {
     itemElement.classList.add("row", "align-items-start");
     itemElement.innerHTML = `
         <div class="col-md-8 col-lg-3" style="text-align: left">
-          <img src="${item.image}" style="width: 10vh" alt="" />
+          <img src="${item.image}" style="width: 10vh" alt="${item.name}" />
         </div>
         <div class="col-md-2" style="text-align: center">
-          <div class="row" style="text-align: center">${item.title}</div>
-          <div class="row" style="text-align: center">${item.author}</div>
+          <div class="row" style="text-align: center; font-weight: bolder">${item.name}</div>
           <div class="row" style="text-align: center">
-            <button class="btn btn-danger" onclick="removeItem('${item.isbn}')">Eliminar</button>
+            <button class="btn btn-danger" onclick="removeItem('${item.id}')">Eliminar</button>
           </div>
         </div>
         <div class="col-md-2 col-lg-2" style="margin-left: 100px">
           <div class="row justify-content-center align-items-center">
-            <button class="btn btn-secondary" style="width: 30px;" onclick="decrementQuantity('${item.isbn}')">-</button>
+            <button class="btn btn-secondary" style="width: 30px;" onclick="decrementQuantity('${item.id}')">-</button>
             <div>${item.quantity}</div>
-            <button class="btn btn-secondary" style="width: 30px;" onclick="incrementQuantity('${item.isbn}')">+</button>
+            <button class="btn btn-secondary" style="width: 30px;" onclick="incrementQuantity('${item.id}')">+</button>
           </div>
         </div>
         <div class="col-md-2 col-lg-3">${formatCurrency(item.price)}</div>
@@ -55,7 +54,7 @@ function calculateShipping(subtotal) {
 
 function removeItem(itemId) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart = cart.filter((item) => item.isbn !== itemId);
+  cart = cart.filter((item) => item.id !== itemId);
   localStorage.setItem("cart", JSON.stringify(cart));
   loadCart();
 }
@@ -63,7 +62,7 @@ function removeItem(itemId) {
 function decrementQuantity(itemId) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const updatedCart = cart.map((item) => {
-    if (item.isbn === itemId && item.quantity > 1) {
+    if (item.id === itemId && item.quantity > 1) {
       item.quantity -= 1;
     }
     return item;
@@ -75,7 +74,7 @@ function decrementQuantity(itemId) {
 function incrementQuantity(itemId) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const updatedCart = cart.map((item) => {
-    if (item.isbn === itemId) {
+    if (item.id === itemId) {
       item.quantity += 1;
     }
     return item;
