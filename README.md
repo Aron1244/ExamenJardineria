@@ -2,7 +2,7 @@
   <img src="assets/logo_duoc-01.jpg" alt="Logo DUOC" width="200">
 </p>
 
-# VerdeVida
+# VerdeVida Jardinería - Tienda Web
 Este proyecto es una página web de una tienda de jardineria donde los clientes pueden comprar productos de jardineria como tierra de hojas, arbustos, macetero, etc.
 
 ## Descripción
