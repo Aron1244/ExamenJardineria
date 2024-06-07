@@ -18,6 +18,7 @@ VerdeVida Jardinería es una tienda web dedicada a la venta de productos de jard
 - CSS3: Para el diseño y la presentación visual del sitio.
 - JavaScript: Para la lógica de la aplicación, incluyendo la gestión del carrito de compras y la aplicación de cupones.
 - Bootstrap: Para el diseño responsivo y componentes de UI.
+- Django: Para el backend de la tienda web.
 
 ## Créditos
 
