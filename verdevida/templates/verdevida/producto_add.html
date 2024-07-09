@@ -30,10 +30,10 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img
-            src="{% static 'assets/ENTRE LIBROS.png' %}"
+            src="{% static 'assets/Jardineria_logo.png' %}"
             class="rounded-circle"
             style="width: 60px"
-          />Entre Libros</a
+          />VerdeVida Jardinería</a
         >
         <button
           class="navbar-toggler"
@@ -56,32 +56,12 @@
             <li class="nav-item">
               <a class="nav-link active" href="catalogo.html">Catálogo</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contacto.html">Contacto</a>
-            </li>
-            <li>
-              <a class="nav-link" href="carrito.html"
-                ><img src="{% static 'assets/shopping-cart.svg' %}" alt=""
-              /></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-lowercase" href="crearUsuario.html"
-                ><img src="{% static 'assets/log-in.svg' %}" alt="" />Crear
-                usuario</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-lowercase" href="login.html"
-                ><img src="{% static 'assets/user.svg' %}" alt="" />iniciar
-                sesión</a
-              >
-            </li>
             <li>
               <button
                 class="btn fw-bold margin-left-3 rounded-circle p-1"
                 id="modo-btn"
                 style="
-                  background-color: #221606;
+                  background-color: #283618;
                   border: white 2px;
                   border-style: solid;
                 "
@@ -95,7 +75,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin: 0px; padding: 0px;">
       <div class="contenido" id="contenido">
         <h1 class="text-center">Formulario de Producto</h1>
         <br />
@@ -118,7 +98,9 @@
         </div>
         <br />
         <div class="text-center mt-4">
-          <a href="{% url 'crud_producto' %}" class="btn btn-secondary">Volver</a>
+          <a href="{% url 'crud_producto' %}" class="btn btn-secondary"
+            >Volver</a
+          >
         </div>
         <br />
       </div>
