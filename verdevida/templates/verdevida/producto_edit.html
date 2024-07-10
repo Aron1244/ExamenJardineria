@@ -81,7 +81,7 @@
           {% if producto %}
           <h2>Formulario Actualizar Producto</h2>
           <br />
-          <form action="" method="POST">
+          <form action="" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="table-responsive">
               <table class="table table-bordered">
